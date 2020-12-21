@@ -1,1 +1,23 @@
-<p>login works!</p>
+<div class="row justify-content-center m-3">
+<div class="col-sm-4">    
+    <div class="card">
+    <article class="card-body">
+        <h4 class="card-title text-center mb-4 mt-1">Log in</h4>
+        <hr>
+        <form (ngSubmit)="ingresar()">
+        <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+             </div>
+            <input name="" [(ngModel)]="nombre" [ngModelOptions]="{standalone: true}" autofocus class="form-control" placeholder="Nombre" type="text" autocomplete="off">
+        </div> <!-- input-group.// -->
+        </div> <!-- form-group// -->
+        <div class="form-group">
+        <button type="submit" class="btn btn-primary btn-block"> Login  </button>
+        </div> <!-- form-group// -->
+        </form>
+    </article>
+    </div> <!-- card.// -->
+    
+</div> <!-- col.// --></div>
