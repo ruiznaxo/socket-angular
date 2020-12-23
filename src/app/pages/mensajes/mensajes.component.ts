@@ -17,4 +17,8 @@ export class MensajesComponent implements OnInit {
     this.username = this.wsServer.usuario.nombre;
   }
 
+  salir(){
+    this.wsServer.logoutWebSocket();
+  }
+
 }
